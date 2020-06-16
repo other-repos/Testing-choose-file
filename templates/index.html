@@ -37,6 +37,14 @@
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
+<form action="{{ url_for('prediction')}}"method="post" enctype="multipart/form-data">
+    <input type=file name=file>  </center>
+    <br>
+    <center> 
+    <button type="submit" class="button button1">Prediction</button>
+    </center>
+</form>
+	 
    <br>
    <br>
    {{ prediction_text }}
