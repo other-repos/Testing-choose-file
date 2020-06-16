@@ -16,31 +16,10 @@
  <div class="login">
 	<h1>Bird Predictor</h1>
 
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-	<input type="text" name="var1" placeholder="var1" required="required" />
-	<input type="text" name="var2" placeholder="var2" required="required" />
-	<input type="text" name="var3" placeholder="var3" required="required" />
-	<input type="text" name="var4" placeholder="var4" required="required" />
-	<input type="text" name="var5" placeholder="var5" required="required" />
-	<input type="text" name="var6" placeholder="var6" required="required" />
-	<input type="text" name="var7" placeholder="var7" required="required" />
-	<input type="text" name="var8" placeholder="var8" required="required" />
-	<input type="text" name="var9" placeholder="var9" required="required" />
-	<input type="text" name="var10" placeholder="var10" required="required" />
-	<input type="text" name="var11" placeholder="var11" required="required" />
-	<input type="text" name="var12" placeholder="var12" required="required" />
-	<input type="text" name="var13" placeholder="var13" required="required" />
-	<input type="text" name="var14" placeholder="var14" required="required" />
-	<input type="text" name="var15" placeholder="var15" required="required" />
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-
 <form action="{{ url_for('prediction')}}"method="post" enctype="multipart/form-data">
     <input type=file name=file>  </center>
     <br>
-    <center> 
+    <center>
     <button type="submit" class="button button1">Prediction</button>
     </center>
 </form>
